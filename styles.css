@@ -45,7 +45,6 @@ header a {
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 7px;
-    white-space: nowrap;
     flex-direction: row;
 }
 
@@ -72,6 +71,7 @@ header a:active {
 
 .logo {
     padding: 0px;
+    padding-top: 5px;
     margin-right: 20px;
     max-width: 40px;
     max-height: 50px;
@@ -79,12 +79,13 @@ header a:active {
 }
 
 header input {
-    margin-right: 15px;
+    margin-right: 50px;
     vertical-align: super;
+
 }
 
 .search-field {
-    margin: 4px;
+    margin: 6px;
     border-color: #aa6533;
     border-radius: 2px;
     border-width: 0px;
@@ -133,8 +134,7 @@ table tr:nth-child(odd) {
 }
 
 .justfield {
-    height: 1000px;
-
+    height: 500px;
 }
 
 figure {
@@ -160,6 +160,10 @@ figure img {
     border-bottom: 5px solid #aa6533;
 
 }
+figure a {
+    width: auto;
+    height: auto;
+}
 
 figcaption {
     padding: 0px 8px;
@@ -172,29 +176,13 @@ figcaption {
 .content-type {
     margin-bottom: 30px;
     display: flex;
-
-}
-
-.content-type a {
-    width: auto;
-    height: auto;
 }
 
 
-.backLink {
-    color: #c37945;
-}
 
 fieldset {
     width: max-content;
     height: max-content;
-}
-
-audio {
-    margin: 4px;
-    height: 30px;
-    max-width: 90px;
-    align-self: center;
 }
 
 video {
