@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: #fff4c8;
+    color: rgb(38, 37, 38);
+    font-size: 16px;
+    font-family: "Libre Franklin", "Rubik", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    flex-flow: column;
+
+    
+}
+
+.container{
+    background-color: #fdf0ad;
+    margin:150px auto;
+    margin-bottom: 0;
+    border-radius: 1px;
+    max-width: 1100px;
+    padding: 30px 40px;
+    box-shadow: 0px 1px 3px 0px #946a004d;
+}
+
+header {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: #ffed95;
+    display: flex;
+    box-shadow: 0 3px 12px 0 #8077004d;
+    border-radius: 5px;
+    padding: 4px;
+    
+}
+
+header a{
+    color: #894719;
+    text-decoration: none;
+    accent-color: darkred;
+    vertical-align: middle;
+    font-size: 19px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 7px;
+    white-space: nowrap;
+    flex-direction: row;
+}
+header a:hover{
+    color:#4e0000;
+ }
+
+header a:active {
+    color: #b10000;
+}
+
+
+@media (max-width:700px) {
+    header a:nth-child(7), header a:nth-child(3),header a:nth-child(4),header a:nth-child(5),header a:nth-child(6) {
+        display: none;
+    }
+    
+}
+
+.logo{
+    padding: 0px;
+    margin-right: 20px;
+    max-width: 40px;
+    max-height: 50px;
+    margin-left: 70px;
+}
+
+header input {
+    margin-right: 15px;
+    vertical-align: super;
+}
+.search-field{
+    margin: 4px;
+    border-color: #aa6533;
+    border-radius: 2px;
+    border-width: 0px;
+    height: 27px;
+    background-color: #f9f1cc;
+    display: block;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 2em;
+    margin-left: 200px;
+}
+
+.header-gap {
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+table {
+    border-radius: 4px;
+    background-color: #ffbd8e;
+    border-color: #97480f;
+    border-style: solid;
+    width: 65%;
+    border-collapse: collapse;
+}
+
+table td,
+th {
+    padding: 5px;
+    border: 1px solid #c8651d;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #ffb179;
+}
+
+table td:nth-child(2) {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fec298;
+}
+
+.justfield {
+    height: 1000px;
+
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 0px;
+    width:min-content;
+    margin: 20px 15px;
+    background-color: #ffe291;
+    border-radius: 1px;
+}
+figure img{
+    width: 150px;
+    height: auto;
+    border-bottom: 5px solid #aa6533;
+
+}
+
+figcaption {
+    padding: 3px 8px;
+    text-align: center;
+    background-clip: content-box;
+}
+
+
+.content-type{
+    margin-bottom: 30px;
+
+}
+.content-type a{
+    width: 150px;
+    height: 191px;;
+}
+
+.backLink {
+    color: #c37945;
+}
+fieldset {
+    width: max-content;
+    height: max-content;
+}
+audio {
+    margin: 4px;
+    height: 30px;
+    max-width: 90px;
+    align-self: center;
+}
+
+
+
+
+
+video {
+    display: block;
+    margin: 5% auto;
+}
