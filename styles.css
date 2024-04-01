@@ -160,6 +160,7 @@ figure img {
     border-bottom: 5px solid #aa6533;
 
 }
+
 figure a {
     width: auto;
     height: auto;
@@ -178,7 +179,69 @@ figcaption {
     display: flex;
 }
 
+.content-type p {
+    font-family: inherit;
+    font-size: 16px;
+    margin: 30px 20px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #ffe291;
+    border-top: 5px solid #aa6533;
+}
 
+.user-avatar {
+    border: 2px solid #c48d45;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff6c7;
+}
+
+
+.watchPage-head {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.watchPage-poster>img {
+    border: 2px solid #c48d45;
+    border-radius: 3px;
+}
+
+.watchPage-poster {
+    margin-bottom: 0px;
+
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    padding: 7px 40px;
+    background-color: #ffd093;
+    word-spacing: 60px;
+}
+
+.watchPage-head-text {
+    margin-left: 40px;
+}
+
+
+.account-info {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.account-description {
+    margin-left: 20px;
+}
+
+.account-description a {
+    color: #894719;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 fieldset {
     width: max-content;

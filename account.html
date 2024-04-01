@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="icon" type="image/png" href="Logo.png">
     <title>Account</title>
 </head>
+
 <body>
     <header>
-        <a href="index.html" class="logo"><img src="Logo.png" alt="*Homepage image*" height="34px" ></a>
+        <a href="index.html" class="logo"><img src="Logo.png" alt="*Homepage image*" height="34px"></a>
         <div class="header-gap"></div>
         <a href="new.html">Нове</a>
         <a href="">Фільми</a>
@@ -18,14 +20,41 @@
         <a href="">Аніме</a>
         <input type="text" name="search" placeholder="Шукати..." class="search-field">
         <input type="checkbox">
-        <a href="account.html" ><img src="account.png"  height="30px" ></a>
+        <a href="account.html"><img src="account.png" height="30px"></a>
     </header>
 
     <div class="container">
-        <img src="account.png" height="200px" alt="*User avatar*" class="user-avatar">
+
+        <div class="account-info">
+            <img src="account.png" height="200px" alt="*User avatar*" class="user-avatar">
+            <div class="account-description">
+                <h2>Username</h2>
+                <h5>Status</h5>
+                <a href="">Змінити</a>
+            </div>
+        </div>
         <h3>Недавно переглянуті</h3>
+        <div class="content-type">
+            <figure><a href="WatchPage.html"><img src="Cartoons\Shrek\poster.jpg"></a>
+                <figcaption>Шрек</figcaption>
+            </figure>
+
+            <figure><a href="WatchPage.html"><img src="Series/Bones/poster.webp"></a>
+                <figcaption>Кістки</figcaption>
+            </figure>   
+        </div>
         <h3>Список бажаного</h3>
+        <div class="content-type">
+            <p>Тут поки що пусто...</p>
+        </div>
         <h3>Список уподобаного</h3>
+        <div class="content-type">
+            <figure><a href="WatchPage.html"><img src="Cartoons\ATLA\poster.jpg"></a>
+                <figcaption>Аватар: Останній маг повітря</figcaption>
+            </figure>
+            
+        </div>
     </div>
 </body>
+
 </html>
