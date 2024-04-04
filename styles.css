@@ -78,11 +78,90 @@ header a:active {
     margin-left: 70px;
 }
 
-header input {
-    margin-right: 50px;
-    vertical-align: super;
 
+.theme-switcher input {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
 }
+.theme-switcher input:checked+label>span {
+    left: calc(100% - 23px);
+    background-color: #198bef;
+}
+
+.theme-switcher{
+    margin-right: 50px;
+    margin-left: 40px;
+    align-content: center;
+}
+
+.theme-switcher label{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    text-indent: 35px;
+    height: 26px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: #f9f1cc;
+    transition: background-color .5s;
+    border: 2px solid transparent;
+    overflow: hidden;
+    color: transparent;
+    user-select: none;
+}
+.theme-switcher label>span {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: #8f5327;
+    transition: .5s;
+}
+
+.theme-switcher label:before {
+    left: 7px;
+    background-image: url();
+}
+
+.theme-switcher label:after, .theme-switcher label:before {
+    content: "";
+    display: block;
+    top: 50%;
+    margin-top: -7px;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    transition: .5s;
+    transform: scale(.9);
+}
+
+.theme-switcher input:not(:checked)+label:after {
+    transform: rotate(0) scale(1.2);
+}
+.theme-switcher label:after {
+    right: 7px;
+}
+.theme-switcher label:after, .theme-switcher label:before {
+    content: "";
+    display: block;
+    top: 50%;
+    margin-top: -7px;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    transition: .5s;
+    transform: scale(.9);
+}
+
+
+
 
 .search-field {
     margin: 6px;
@@ -95,7 +174,7 @@ header input {
     font-family: inherit;
     font-size: 15px;
     line-height: 2em;
-    margin-left: 200px;
+    margin-left: 170px;
 }
 
 .header-gap {
@@ -146,19 +225,19 @@ figure {
     background-color: #ffe291;
     border-radius: 1px;
     box-shadow: 0 1px 10px 0 #0000004d;
-
 }
 
 figure:hover {
     background-color: #c37945;
     color: #f4ebd3;
+    transition: background-color .5s;
 }
 
 figure img {
     width: auto;
     height: 220px;
     border-bottom: 5px solid #aa6533;
-
+    user-select: none;
 }
 
 figure a {
@@ -221,6 +300,9 @@ footer img {
     padding: 7px 40px;
     background-color: #ffd093;
     word-spacing: 60px;
+}
+footer img:hover{
+    background-color: #c37945;
 }
 
 .watchPage-head-text {
