@@ -62,7 +62,26 @@ header a:active {
     color: #b10000;
 }
 
+.search-field {
+    margin: 6px;
+    border-color: #aa6533;
+    border-radius: 2px;
+    border-width: 0px;
+    height: 27px;
+    background-color: #f9f1cc;
+    display: flex;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 2em;
+    margin-left: 170px;
+    outline: none;
+}
 
+.header-gap {
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+}
 @media (max-width:700px) {
 
     header a:nth-child(7),
@@ -171,56 +190,19 @@ header a:active {
     transform: scale(.9);
 }
 
-
-
-
-.search-field {
-    margin: 6px;
-    border-color: #aa6533;
-    border-radius: 2px;
-    border-width: 0px;
-    height: 27px;
+.friends{
+    width: 100px;
+    align-items: center;
+    padding:  4px 8px;
+    padding-left: 8px;
+    border-radius: 8px;
+    margin-left: 500px;
     background-color: #f9f1cc;
-    display: flex;
-    font-family: inherit;
-    font-size: 15px;
-    line-height: 2em;
-    margin-left: 170px;
-    outline: none;
+    height: min-content;
 }
-
-.header-gap {
-    width: 150px;
-    height: 30px;
-    margin-right: 20px;
+ul{
+    padding-left: 25px;
 }
-
-/* table {
-    background-color: #ffbd8e;
-    border-color: #97480f;
-    border-style: solid;
-    width: 65%;
-    border-collapse: collapse;
-}
-
-table td,
-th {
-    padding: 5px;
-    border: 1px solid #c8651d;
-    padding: 8px 10px;
-}
-
-table th {
-    background-color: #ffb179;
-}
-
-table td:nth-child(2) {
-    text-align: left;
-}
-
-table tr:nth-child(odd) {
-    background-color: #fec298;
-} */
 
 
 
@@ -339,7 +321,7 @@ figcaption {
     margin: 0px 30px;
     margin-bottom: 40px;
     text-align: justify;
-    word-spacing: 0.5em;
+    word-spacing: 0.3em;
 }
 
 .watch-page-description p {
@@ -443,8 +425,6 @@ button:active {
 
 }
 
-
-
 .comment-form {
     width: 900px;
     margin-left: 70px;
@@ -487,10 +467,11 @@ form input:nth-child(-n+2) {
     font-size: 14px;
 }
 
-form> input:nth-child(2) {
+form>input:nth-child(2) {
     margin-bottom: 20px;
 }
-form> input:last-child{
+
+form>input:last-child {
     border: none;
     padding: 9px 13px;
     font-size: 14px;
@@ -498,7 +479,8 @@ form> input:last-child{
     background-color: #aa6533;
     color: white;
 }
-form> input:last-child:hover{
+
+form>input:last-child:hover {
     background-color: #884e24;
     cursor: pointer;
 }
