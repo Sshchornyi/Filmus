@@ -12,15 +12,19 @@
 
 <body>
     <header>
-        <a href="index.html" class="logo"><img src="Logo.png" alt="*Homepage image*" height="34px"></a>
+        <a href="index.html" class="logo"><img src="Logo.png" alt="*Homepage image*" height="34px" ></a>
         <div class="header-gap"></div>
         <a href="new.html">Нове</a>
-        <a href="films.html">Фільми</a>
+        <a href="movies.html">Фільми</a>
         <a href="series.html">Серіали</a>
         <a href="cartoons.html">Мультфільми</a>
         <a href="anime.html">Аніме</a>
-        <input type="text" name="search" placeholder="Шукати..." class="search-field">
 
+        <form id="search-form">
+            <input type="text" name="search" placeholder="Шукати..." class="search-field" id="search-field">
+        </form>
+        
+       
         <div class="theme-switcher">
             <input type="checkbox" id="switcher">
             <label for="switcher">
@@ -29,13 +33,13 @@
                 ::after
             </label>
         </div>
-        <a href="account.html"><img src="account.png" height="30px"></a>
+        <a href="account.html" ><img src="account.png"  height="30px" ></a>
     </header>
 
     <div class="container">
         <h2>Трилери</h2>
         <div class="content-type">
-            <figure><a href="WatchPage.html"><img src="Films/Pearl/poster.jpeg"></a>
+            <figure><a href="WatchPage.html"><img src="Films/Pearl/poster.jpg"></a>
                 <figcaption>Перл</figcaption>
             </figure>
 
@@ -57,7 +61,7 @@
         </div>
         <h2>Комедії</h2>
         <div class="content-type">
-            <figure><a href="WatchPage.html"><img src="Films/Hustle/poster.webp"></a>
+            <figure><a href="WatchPage.html"><img src="Films/Hustle/poster.jpg"></a>
                 <figcaption>Шахрайки</figcaption>
             </figure>
         </div>
@@ -66,15 +70,19 @@
             <figure><a href="WatchPage.html"><img src="Films/LOR/poster.jpg"></a>
                 <figcaption>Володар кілець</figcaption>
             </figure>
+            <figure><a href="WatchPage.html"><img src="Films/Sonic/poster.jpg"></a>
+                <figcaption>Сонік</figcaption>
+            </figure>
 
             <figure><a href="WatchPage.html"><img src="Films/Dune/poster.jpg"></a>
                 <figcaption>Дюна</figcaption>
             </figure>
-            <figure><a href="WatchPage.html"><img src="Films/D&D/poster.png"></a>
+            <figure><a href="WatchPage.html"><img src="Films/D&D/poster.jpg"></a>
                 <figcaption>Підземелля і дракони: Честь злодіїв</figcaption>
             </figure>
         </div>
     </div>
+    <script type="text/javascript" src="search.js"></script>
 
 </body>
 

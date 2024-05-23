@@ -9,8 +9,6 @@ body {
     font-weight: normal;
     font-style: normal;
     flex-flow: column;
-
-
 }
 
 .container {
@@ -30,7 +28,7 @@ header {
     position: fixed;
     background-color: #ffed95;
     display: flex;
-    box-shadow: 0 3px 12px 0 #8077004d;
+    box-shadow: 0 3px 12px 0 #4040404d;
     border-radius: 5px;
     padding: 0px 4px;
     z-index: 2;
@@ -42,7 +40,7 @@ header {
 }
 
 header a {
-    height: 50px;
+    height: 57px;
     color: #894719;
     text-decoration: none;
     font-size: 19px;
@@ -57,7 +55,11 @@ header a:not(:first-child):hover {
     transition: background-color .4s;
 
 }
-
+.header-gap {
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+}
 header a:active {
     color: #b10000;
 }
@@ -76,12 +78,30 @@ header a:active {
     margin-left: 170px;
     outline: none;
 }
-
-.header-gap {
-    width: 150px;
-    height: 30px;
-    margin-right: 20px;
+#search-form input{
+    max-width: fit-content;
+    margin: 6px;
+    border-color: #aa6533;
+    border-radius: 2px;
+    border-width: 0px;
+    height: 27px;
+    background-color: #f9f1cc;
+    color: #262526;
+    display: flex;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 2em;
+    margin-left: 170px;
+    outline: none;
 }
+#search-form input:hover{
+    background-color: #fdf0b6;
+}
+
+
+
+
+
 @media (max-width:700px) {
 
     header a:nth-child(7),
@@ -190,17 +210,18 @@ header a:active {
     transform: scale(.9);
 }
 
-.friends{
+.friends {
     width: 100px;
     align-items: center;
-    padding:  4px 8px;
+    padding: 4px 8px;
     padding-left: 8px;
     border-radius: 8px;
     margin-left: 500px;
     background-color: #f9f1cc;
     height: min-content;
 }
-ul{
+
+ul {
     padding-left: 25px;
 }
 
@@ -215,11 +236,13 @@ figure {
     flex-flow: column;
     padding: 0px;
     width: min-content;
+    text-wrap: wrap;
     margin: 20px 15px;
     background-color: #ffe291;
     transition: background-color .5s;
     border-radius: 1px;
     box-shadow: 0 1px 10px 0 #0000004d;
+    
 }
 
 figure:hover {
@@ -238,6 +261,7 @@ figure img {
 figure a {
     width: auto;
     height: auto;
+    
 }
 
 figcaption {
@@ -251,6 +275,7 @@ figcaption {
 .content-type {
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .content-type p {

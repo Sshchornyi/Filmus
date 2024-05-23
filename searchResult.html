@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="Logo.png" alt="*Homepage image*" height="34px" ></a>
+        <div class="header-gap"></div>
+        <a href="new.html">Нове</a>
+        <a href="movies.html">Фільми</a>
+        <a href="series.html">Серіали</a>
+        <a href="cartoons.html">Мультфільми</a>
+        <a href="anime.html">Аніме</a>
+
+        <form id="search-form">
+            <input type="text" name="search" placeholder="Шукати..." class="search-field" id="search-field">
+        </form>
+        
+       
+        <div class="theme-switcher">
+            <input type="checkbox" id="switcher">
+            <label for="switcher">
+                ::before
+                <span></span>
+                ::after
+            </label>
+        </div>
+        <a href="account.html" ><img src="account.png"  height="30px" ></a>
+    </header>
+
+    <div class="container" >
+        <h2>Результати пошуку</h2>
+        <div class="content-type" id="searchResultContent-type">
+
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="resultSearch.js"></script>
+    <script type="text/javascript" src="search.js"></script>
+
+
+</body>
+</html>

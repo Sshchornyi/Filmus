@@ -12,15 +12,19 @@
 
 <body>
     <header>
-        <a href="index.html" class="logo"><img src="Logo.png" alt="*Homepage image*" height="34px" ></a>
+        <a href="index.html" class="logo"><img src="Logo.png" alt="*Homepage image*" height="34px"></a>
         <div class="header-gap"></div>
         <a href="new.html">Нове</a>
-        <a href="films.html">Фільми</a>
+        <a href="movies.html">Фільми</a>
         <a href="series.html">Серіали</a>
         <a href="cartoons.html">Мультфільми</a>
         <a href="anime.html">Аніме</a>
-        <input type="text" name="search" placeholder="Шукати..." class="search-field">
-       
+
+        <form id="search-form">
+            <input type="text" name="search" placeholder="Шукати..." class="search-field" id="search-field">
+        </form>
+
+
         <div class="theme-switcher">
             <input type="checkbox" id="switcher">
             <label for="switcher">
@@ -29,7 +33,7 @@
                 ::after
             </label>
         </div>
-        <a href="account.html" ><img src="account.png"  height="30px" ></a>
+        <a href="account.html"><img src="account.png" height="30px"></a>
     </header>
 
     <div class="container">
@@ -52,7 +56,7 @@
         </div>
         <h2>Драма</h2>
         <div class="content-type">
-            <figure><a href="WatchPage.html"><img src="Series/Bones/poster.webp"></a>
+            <figure><a href="WatchPage.html"><img src="Series/Bones/poster.jpg"></a>
                 <figcaption>Кістки</figcaption>
             </figure>
             <figure><a href="WatchPage.html"><img src="Series/Sherlock/poster.jpg"></a>
@@ -62,19 +66,20 @@
         </div>
         <h2>Фантастика</h2>
         <div class="content-type">
-            <figure><a href="WatchPage.html"><img src="Series/Love, Death & Robots/poster.jpg"></a>
+            <figure><a href="WatchPage.html"><img src="Series/LD&R/poster.jpg"></a>
                 <figcaption>Любов, смерть і роботи</figcaption>
             </figure>
-            <figure><a href="WatchPage.html"><img src="Series/Witcher/poster.webp"></a>
+            <figure><a href="WatchPage.html"><img src="Series/Witcher/poster.jpg"></a>
                 <figcaption>Відьмак</figcaption>
             </figure>
-            <figure><a href="WatchPage.html"><img src="Series/Supernatural/poster.webp"></a>
+            <figure><a href="WatchPage.html"><img src="Series/Supernatural/poster.jpg"></a>
                 <figcaption>Надприродне</figcaption>
             </figure>
 
         </div>
 
     </div>
+    <script type="text/javascript" src="search.js"></script>
 
 </body>
 
