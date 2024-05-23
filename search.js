@@ -43,7 +43,6 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
     let searchInput = document.getElementById('search-field').value
     searchInput = searchInput.toLowerCase().trim()
-    //let filtredSearch = Cartoons.filter(item => item.toLowerCase().includes(searchInput))
     let filteredSearch
     if (searchInput != null && searchInput.length > 0) {
         let filteredAnime =  anime.filter((item) => item[1].toLowerCase().includes(searchInput))
@@ -57,9 +56,9 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
         console.log(filteredSearch)
 
     }
-    alert(filteredSearch.join('; '))
+    //alert(filteredSearch.join('; '))
     localStorage.setItem('searchResults', JSON.stringify(filteredSearch));//збереження в пам'яті
-    window.location.href = 'SearchResult.html'
+    window.location.href = 'searchResult.html'
 
 });
 
