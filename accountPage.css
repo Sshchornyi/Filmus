@@ -1,0 +1,41 @@
+.friends {
+    width: 100px;
+    align-items: center;
+    padding: 4px 8px;
+    padding-left: 8px;
+    border-radius: 8px;
+    margin-left: 500px;
+    background-color: var(--friends-bg-color);
+    height: min-content;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+.user-avatar {
+    border: 2px solid var(--user-avatar-border-color);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--user-avatar-bg-color);
+}
+
+.account-info {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.account-description {
+    margin-left: 20px;
+}
+
+.account-description a {
+    color: var(--acount-description-a-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.account-description a:hover {
+    color: var(--acount-description-a-hover-color);
+    text-decoration: underline;
+}
