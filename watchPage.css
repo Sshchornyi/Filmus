@@ -72,6 +72,7 @@ footer img:hover {
     background-color: var(--footer-img-hover-bg-color);
     transition: .5s;
 }
+
 video {
     margin-left: 130px;
     margin-bottom: 20px;
@@ -88,6 +89,7 @@ video {
     flex-wrap: wrap;
 
 }
+
 button {
     margin: 1.5px;
     width: 80px;
@@ -97,12 +99,12 @@ button {
     border-style: solid;
     border-width: 0.5px;
     border-radius: 1px;
-    color:var(--button-color);
+    color: var(--button-color);
 
 }
 
 button:hover {
-    background-color:var(--button-hover-bg-color);
+    background-color: var(--button-hover-bg-color);
     border-color: var(--button-hover-border-color);
     color: var(--button-hover-color);
     transition: background-color .2s;
@@ -166,8 +168,9 @@ form input:nth-child(-n+2) {
     font-family: inherit;
     font-size: 14px;
 }
-form input:nth-child(-n+2)::placeholder{
-    color:var(--comment-input-text-color);
+
+form input:nth-child(-n+2)::placeholder {
+    color: var(--comment-input-text-color);
 
 }
 
@@ -188,4 +191,189 @@ form>input:last-child {
 form>input:last-child:hover {
     background-color: var(--form-add-commentary-btn-hover-bg-color);
     cursor: pointer;
+}
+
+/* @media (max-width:1024px) {
+
+    header a:nth-child(7),
+    header a:nth-child(3),
+    header a:nth-child(4),
+    header a:nth-child(5),
+    header a:nth-child(6) {
+        display: none;
+    }
+
+    figure {
+        margin: 10px 5px;
+        font-size: 10px;
+        max-width: fit-content;
+    }
+
+    .container {
+        margin: 150px auto;
+        margin-bottom: 200px;
+        max-width: 1100px;
+        padding: 20px;
+    }
+
+    figure img {
+        width: auto;
+        max-height: 120px;
+        user-select: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+
+    }
+
+    #search-form input {
+        margin-left: 20px;
+        max-width: 70px;
+    }
+
+    .theme-switcher {
+        margin: 0px 20px;
+    }
+
+    header a {
+        padding: 0px 20px;
+
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .watchPage-head{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .watch-page-description{
+        font-size: 10px;
+    }
+    video{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+
+    }
+    .playlist {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .playlist-seasons {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        flex-wrap: nowrap;
+    }
+    .comment-form {
+        width: 900px;
+        margin-left: 2px;
+        padding: 20px;
+        background-color: var(--comment-form-bg-color);
+    }
+    button {
+        margin: 1.5px;
+        width: 60px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .watchPage-head-text {
+        margin-left: 20px;
+    }
+} */
+@media (max-width:1024px) {
+
+
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+   
+    }
+
+    .watchPage-head {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .watch-page-description {
+        font-size: 10px;
+        width: auto;
+    }
+
+    video {
+        margin-left: 100px;
+        margin-bottom: 10px;
+        width: 700px;
+
+    }
+
+    .playlist {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 800px;
+
+
+    }
+
+    .playlist-seasons {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .comment-form {
+        width: 900px;
+        margin-left: 2px;
+        padding: 20px;
+        background-color: var(--comment-form-bg-color);
+    }
+
+    button {
+        margin: 1.5px;
+        width: 60px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .watchPage-head-text {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    video {
+        margin-left: 100px;
+        margin-bottom: 10px;
+        width: 500px;
+
+    }
+}
+
+@media (max-width:570px) {
+    video {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        width: 300px;
+
+    }
+
+}
+
+@media (max-width:370px) {
+    video {
+        margin-left: 40px;
+        margin-bottom: 10px;
+        width: 150px;
+
+    }
 }

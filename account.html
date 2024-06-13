@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="accountPage.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="accountPage.css">
+
+    
 
     <link rel="icon" type="image/png" href="Logo.png">
     <title>Аккаунт</title>
@@ -22,7 +24,7 @@
         <a href="anime.html">Аніме</a>
 
         <form id="search-form">
-            <input type="text" name="search" placeholder="Шукати..." class="search-field" id="search-field" >
+            <input type="text" name="search" placeholder="Шукати..." class="search-field" id="search-field">
         </form>
 
 
@@ -34,8 +36,14 @@
                 ::after
             </label>
         </div>
-        <a href="account.html"><img src="account.png" height="30px"></a>
+        <a href="account.html"><img src="account.png" height="30px" alt="*account page image*"></a>
     </header>
+    <div id="paralax-bg-container">
+        <div id="parallax-bg1" class="parallax-bg"></div>
+        <div id="parallax-bg2" class="parallax-bg"></div>
+        <div id="parallax-bg3" class="parallax-bg"></div>
+        <div id="parallax-bg4" class="parallax-bg"></div>
+    </div>
 
     <div class="container">
 
@@ -61,13 +69,32 @@
         </div>
         <h3>Недавно переглянуті</h3>
         <div class="content-type">
-            <figure><a href="WatchPage.html"><img src="Cartoons\Shrek\poster.jpg"></a>
-                <figcaption>Шрек</figcaption>
-            </figure>
 
-            <figure><a href="WatchPage.html"><img src="Series/Bones/poster.jpg"></a>
-                <figcaption>Кістки</figcaption>
-            </figure>
+            <div class="parallax-container">
+                <div class="parallax-box">
+                    <figure><a href="WatchPage.html"><img src="Cartoons\Shrek\poster.jpg" alt="*poster*"></a>
+                        <figcaption>Шрек</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="parallax-container">
+                <div class="parallax-box">
+                    <figure><a href="WatchPage.html"><img src="Series/Bones/poster.jpg" alt="*poster*"></a>
+                        <figcaption>Кістки</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="parallax-container">
+                <div class="parallax-box">
+                    <figure><a href="WatchPage.html"><img src="Anime/Frieren/poster.jpg" alt="*poster*"></a>
+                        <figcaption>Фрірен</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
         </div>
         <h3>Список бажаного</h3>
         <div class="content-type">
@@ -75,15 +102,29 @@
         </div>
         <h3>Список уподобаного</h3>
         <div class="content-type">
-            <figure><a href="WatchPage.html"><img src="Cartoons\ATLA\poster.jpg"></a>
-                <figcaption>Аватар: Останній маг повітря</figcaption>
-            </figure>
+
+            <div class="parallax-container">
+                <div class="parallax-box">
+                    <figure><a href="WatchPage.html"><img src="Cartoons\ATLA\poster.jpg" alt="*poster*"></a>
+                        <figcaption>Аватар: Останній маг повітря</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+
 
         </div>
-
     </div>
+
+
+
     <script type="text/javascript" src="search.js"></script>
     <script type="text/javascript" src="themeSwitcher.js"></script>
+    <script type="text/javascript" src="parallax.js"></script>
+    <script type="text/javascript" src="parallaxBg.js"></script>
+
+
 
 </body>
 

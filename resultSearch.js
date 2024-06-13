@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const image = document.createElement('img')
         let path = pathName + '/poster.jpg'
         image.src = path
+        image.setAttribute('alt','*poster*')
 
         console.log(path)
         
